@@ -1,8 +1,10 @@
 #include <iostream>
 #include "Lista.h"
+#include "Stos.h"
 using namespace std;
 int main()
 {
+    /*
     cout << "Lab1...!" << endl;
     Lista nowaLista;
     nowaLista.addFront(9);
@@ -52,6 +54,16 @@ int main()
     nowaLista.printLista();
     nowaLista.delByVal(3);
     nowaLista.printLista();
+    */
+    Stos stos;
+    cout<<stos.isEmpty();
+    stos.push(2);
+    cout<<stos.top();
+    stos.push(5);
+    cout<<stos.top();
+    stos.pop();
+    cout<<stos.top();
+
 
 
     return 0;
