@@ -11,14 +11,14 @@ Stos::~Stos()
 }
 void Stos::push(int value){
 if (topElement == 100-1){
-    cout<< "Stack overflow";
+    cout<< "Stos przepelniony.";
 }
 arrayStack[++topElement]=value;
 }
 
 void Stos::pop(){
 if(topElement ==-1) {
-    cout<<"No element to pop\n";
+    cout<<"Nie ma elementu do sciagniecia\n";
     return;
 }
 topElement--;
@@ -26,7 +26,10 @@ topElement--;
 
 
 int Stos::top(){
+  if(!isEmpty(){
 return arrayStack[topElement];
+    }
+return -1;
 }
 
 bool Stos::isEmpty(){
