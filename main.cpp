@@ -4,7 +4,6 @@
 using namespace std;
 int main()
 {
-    /*
     cout << "Lab1...!" << endl;
     Lista nowaLista;
     nowaLista.addFront(9);
@@ -19,7 +18,11 @@ int main()
     nowaLista.addLast(123);
     nowaLista.printLista();
     nowaLista.clearLista();
+    
+    
     cout<< "Lab2...!"<<endl;
+    
+    
     nowaLista.addInOrder(9);
     nowaLista.printLista();
     nowaLista.addInOrder(10);
@@ -54,7 +57,7 @@ int main()
     nowaLista.printLista();
     nowaLista.delByVal(3);
     nowaLista.printLista();
-    */
+    
     Stos stos;
     cout<<stos.isEmpty();
     stos.push(2);
@@ -63,7 +66,54 @@ int main()
     cout<<stos.top();
     stos.pop();
     cout<<stos.top();
-
+   
+    
+    Kolejka kolejka;
+    kolejka.enqueue(1);
+    kolejka.show();
+    kolejka.enqueue(3);
+    kolejka.show();
+    kolejka.enqueue(5);
+    kolejka.show();
+    kolejka.enqueue(7);
+    kolejka.show();
+    kolejka.dequeue();
+    kolejka.show();
+    kolejka.dequeue();
+    kolejka.show();
+    kolejka.enqueue(2);
+    kolejka.show();
+    kolejka.enqueue(4);
+    kolejka.show();
+    kolejka.enqueue(6);
+    kolejka.show();
+    kolejka.enqueue(8);
+    kolejka.show();
+    kolejka.enqueue(10);
+    kolejka.show();
+    for(int i=0;i<6;i++){
+        kolejka.dequeue();
+        kolejka.show();
+    }
+    
+    drzewoBST drzewo;
+    drzewo.showInPreorder(0);
+    
+    drzewoBSTd drzewo2;
+    drzewo2.addNode(10);
+    drzewo2.addNode(5);
+    drzewo2.addNode(3);
+    drzewo2.addNode(9);
+    drzewo2.addNode(8);
+    drzewo2.addNode(14);
+    drzewo2.addNode(12);
+    drzewo2.addNode(1);
+    drzewo2.addNode(11);
+    
+    drzewo2.showInInorder(drzewo2.returnRoot());
+    cout<<drzewo2.searchByValue(drzewo2.returnRoot(),5);
+    drzewo2.showInPostorder(drzewo2.returnRoot());
+    drzewo2.showInPreorder(drzewo2.returnRoot());
 
 
     return 0;
