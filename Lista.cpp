@@ -35,21 +35,7 @@ void Lista::addLast(int value){
     newNode->next=nextNode;
 
 }
-/*void Lista::addInOrder(int value, int place){
-    int i=2;
-    Element* newNode = head;
-    Element* nextNode = new Element;
-    nextNode->next=nullptr;
-    nextNode->val=value;
-    while(newNode->next&&i<place){
-        newNode=newNode->next;
-        i++;
-    }
-    nextNode->next=newNode->next;
-    newNode->next=nextNode;
 
-}
-*/
 void Lista::addInOrder(int value){
     if(head==nullptr||head->val>value){
         addFront(value);
