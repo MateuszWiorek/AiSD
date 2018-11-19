@@ -56,12 +56,10 @@ void Lista::addInOrder(int value){
 
 void Lista::printLista(){
     Element* newNode = head;
-    cout<<"\n-----------------------";
     while(newNode){
-        cout<<endl<<newNode->val;
+        cout<<" "<<newNode->val;
         newNode=newNode->next;
     }
-    cout<<"\n-------------------------";
 }
 
 void Lista::delByVal(int value){

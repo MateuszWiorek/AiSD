@@ -13,7 +13,7 @@ drzewoBST::~drzewoBST()
 
 
 int drzewoBST::visit(int t){
-cout<<endl<<arrayDrzewo[t]<<endl;
+cout<<arrayDrzewo[t]<<endl;
 return arrayDrzewo[t];
 }
 

@@ -35,7 +35,7 @@ if(head==nullptr){
     int vval = head->val;
     head=element->next;
     delete element;
-    cout<<"\nSciagniety element: "<< vval <<endl;
+    cout<<"Sciagniety element: "<< vval <<endl;
     return vval;
     }
 }

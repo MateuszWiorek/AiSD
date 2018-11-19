@@ -26,7 +26,7 @@ topElement--;
 
 
 int Stos::top(){
-  if(!isEmpty(){
+  if(!isEmpty()){
 return arrayStack[topElement];
     }
 return -1;
