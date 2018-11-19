@@ -1,4 +1,3 @@
 # AiSD
-Algorithms for university
-C++11 or higher(nullptr)
-KolejkaFIFO doesn't work.
+Algorytmy zaimplementowane w języku c++.
+Kompilacja z opcją -std=c++11
