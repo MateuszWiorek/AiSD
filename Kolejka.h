@@ -1,25 +1,27 @@
-#ifndef KOLEJKA_H
-#define KOLEJKA_H
+/*
+ * Kolejka.h
+ *
+ *  Created on: 12 sty 2019
+ *      Author: LK
+ */
 
+#ifndef KOLEJKA_H_
+#define KOLEJKA_H_
 
-class Kolejka
-{
-    public:
-        Kolejka();
-        virtual ~Kolejka();
-        void enqueue(int val);
-        int dequeue();
-        void show();
-
-    protected:
-
-    private:
-        struct Element{
-        int val;
-        Element* next;
-        };
-        Element* head;
-        Element* tail;
+class Kolejka {
+public:
+	Kolejka(int rozmiar);
+	int* tablica;
+	int liczbaElementow=0;
+	int rozmiar;
+	void swap(int&, int&);
+	void wyswietl();
+	void zatapianie(int i, int n);
+	void wynurzanie(int i, int n);
+	void insert(int);
+	int extract();
+	bool isEmpty();
+	virtual ~Kolejka();
 };
 
-#endif // KOLEJKA_H
+#endif /* KOLEJKA_H_ */
